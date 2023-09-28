@@ -1,0 +1,467 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "tudhu"
+			"defaultCloseOperation": 2
+			"name": "frame1"
+			"title": "图书管理系统"
+			"foreground": sfield java.awt.SystemColor windowText
+			"maximizedBounds": new java.awt.Rectangle( 0, 0, 0, 0 )
+			"visible": true
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JDesktopPane", new FormLayoutManager( class javax.swing.JDesktopPane ) ) {
+				name: "desktopPane1"
+				"foreground": sfield java.awt.Color black
+				"background": sfield java.awt.SystemColor menu
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :197:398:x, comp label1:::p:139:p, space :p:378:p}, seq {space :p:150:p, par t {par l:t {seq {comp label3:::p::p, space :::p, comp B_publishtxt:::p:150:p}, seq l {comp label4:::p:48:p, space :::p, comp B_numbertxt:::p:150:p}}, seq t {comp label7:::p:50:p, space :::p, comp B_idtxt:::p:150:p}}, space ::117:x, par l {seq {par l {comp label8:::p:50:p, comp label6::t:p:50:p}, space :::p, par l {comp B_typetxt:::p:150:p, comp B_authertxt:::p:150:p}}, seq {comp label2:::p:48:p, space :::p, comp B_nametxt:::p:149:p}}, space ::236:x}, seq {par l {seq l {space :p:306:p, comp button1:::p:100:p, space :p:45:p, comp button2:::p:100:p}, seq l {space :p:167:p, comp label5:::p:57:p, space u:::p, comp B_remarktxt:::p:397:p}}, space ::282:x}}"
+					"$verticalGroup": "par l {seq l {comp label1:::p:47:p, space :p:31:p, par b {comp label7::b:p::p, comp B_idtxt::b:p::p, comp label2::b:p:30:p, comp B_nametxt::b:p::p}, space :p:34:p, par b {comp B_authertxt::b:p::p, comp label6::b:p::p, comp B_publishtxt::b:p::p, comp label3::b:p::p}, space :p:44:p, par b {comp label4::b:p::p, comp B_numbertxt::b:p::p, comp label8::b:p::p, comp B_typetxt::b:p::p}, space :p:40:p, par t {comp B_remarktxt:::p:66:p, comp label5:::p:41:p}, space s:::p, par b {comp button1::b:p:44:p, comp button2::b:p:44:p}, space ::190:x}}"
+				} ) {
+					name: "addbookpan"
+					"visible": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "图书添加"
+						"horizontalAlignment": 0
+						"horizontalTextPosition": 0
+						"font": new java.awt.Font( "幼圆", 1, 20 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "书名："
+						"horizontalTextPosition": 0
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "出版社："
+						"horizontalAlignment": 0
+						"horizontalTextPosition": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "库存："
+						"horizontalAlignment": 0
+						"horizontalTextPosition": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "描述："
+						"horizontalAlignment": 0
+						"horizontalTextPosition": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "B_nametxt"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "B_publishtxt"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "B_numbertxt"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "B_remarktxt"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "作者："
+						"horizontalAlignment": 0
+						"horizontalTextPosition": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "编号："
+						"horizontalAlignment": 0
+						"horizontalTextPosition": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "类别："
+						"horizontalAlignment": 0
+						"horizontalTextPosition": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "B_authertxt"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "B_idtxt"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "B_typetxt"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "添加"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button2"
+						"text": "重置"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 30
+					"y": 105
+					"width": 915
+					"height": 605
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :0:356:x, par t {comp label10:::p:85:p, comp label9:::p:85:p}, space s:::p, par l {comp scrollPane1:::p:233:p, comp bookTypletxt:::p:233:p}, space :p:288:p}, seq t {space ::380:x, par l {seq t {comp addTyplebut:::p:98:p, space :p:126:p, comp Rbut_Typle:::p:103:p, space :p:273:p}, seq t {comp label12:::p:143:p, space :p:417:p}}}}"
+					"$verticalGroup": "par l {seq l {space :p:43:p, comp label12:::p:41:p, space :p:42:p, par b {comp label9::b:p:30:p, comp bookTypletxt::b:p::p}, space :p:32:p, par l {comp scrollPane1:::p:149:p, comp label10:::p:31:p}, space :p:80:p, par b {comp Rbut_Typle::b:p:50:p, comp addTyplebut::b:p:50:p}, space ::57:x}}"
+				} ) {
+					name: "addTypepan"
+					"visible": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "图书类别名称："
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"text": "图书类别描述："
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "bookTypletxt"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "bookremarktxt"
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addTyplebut"
+						"text": "添加"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addTyple", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Rbut_Typle"
+						"text": "重置"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Rbut_Typle", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label12"
+						"text": "图书类别添加"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "宋体", 1, 16 )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": -35
+					"y": -10
+					"width": 980
+					"height": 525
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p:276:p, comp label11:::p:104:p, space :::p, comp s_bookTypeNametxt:::p:233:p, space s:::p, comp s_bookTypebut:::p:87:p, space ::276:x}, seq t {space ::205:x, par l {seq t {comp scrollPane2:::p:557:p, space :p:216:p}, seq t {comp panel1:::p::p, space :p:188:p}}}}"
+					"$verticalGroup": "par l {seq l {space :p:42:p, par b {comp label11::b:p:31:p, comp s_bookTypeNametxt::b:p::p, comp s_bookTypebut::b:p:31:p}, space :p:30:p, comp scrollPane2:::p:263:p, space :::p, comp panel1:::::x, space :p:12:p}}"
+				} ) {
+					name: "mtTyplepan"
+					"visible": false
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table1"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+								} )
+							}, new java.util.Vector {
+								add( "编号" )
+								add( "图书类别名称" )
+								add( "图书类别描述" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( false )
+								add( false )
+								add( false )
+							}, new java.util.Vector {
+								add( new com.jformdesigner.model.SwingTableColumn( null, 100, 0, 0, true ) )
+								add( new com.jformdesigner.model.SwingTableColumn( null, 150, 0, 0, true ) )
+								add( new com.jformdesigner.model.SwingTableColumn( null, 230, 0, 0, true ) )
+							} )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "table1MousePressed", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": "图书类别名称："
+						"horizontalAlignment": 0
+						"horizontalTextPosition": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "s_bookTypeNametxt"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "s_bookTypebut"
+						"text": "查询"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "s_bookTypebut", true ) )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :p:31:p, par l {comp label13:::p:52:p, comp label14:::::x}, space :::p, par l {seq {comp T_idtxt:::p:117:p, space s:::p, comp label15:::p:96:p, space :::p, comp T_nametxt:::p:157:p}, seq {comp scrollPane3:::p:352:p, space :p:43:p, par l {comp Bt_update:::p::p, comp button4:::p::p}}}, space ::35:x}}"
+						"$verticalGroup": "par l {seq l {space :p:21:p, par b {comp label13::b:p:29:p, comp T_nametxt::b:p:31:p, comp T_idtxt::b:p::p, comp label15::b:p:30:p}, space :p:28:p, par t {comp scrollPane3::l:p:117:p, comp label14::l:p:32:p, seq l {space :p:12:p, comp Bt_update:::p:39:p, space u:::p, comp button4:::p:39:p}}, space ::40:x}}"
+					} ) {
+						name: "panel1"
+						"border": new javax.swing.border.TitledBorder( "图书类别的修改" )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label13"
+							"text": "编号："
+							"horizontalAlignment": 0
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label14"
+							"text": "描述："
+							"horizontalAlignment": 0
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "T_idtxt"
+							"enabled": false
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label15"
+							"text": "图书类别名称："
+							"horizontalAlignment": 0
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "T_nametxt"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane3"
+							add( new FormComponent( "javax.swing.JTextArea" ) {
+								name: "T_remarktxt"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "Bt_update"
+							"text": "修改"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_update", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button4"
+							"text": "删除"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 15
+					"y": 15
+					"width": 1000
+					"height": 645
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {par t {seq {space :0:88:x, comp scrollPane4:::p:774:p}, seq l {space :p:82:p, comp panel3:::::x}, seq l {space :p:323:p, comp label16:::p:55:p, space :::p, comp B_searchtxt:::p:175:p, space :::p, comp B_searchbut:::p:85:p, space :0:0:x}}, space ::178:x}}"
+					"$verticalGroup": "par l {seq l {space :p:35:p, par b {comp B_searchtxt::b:p::p, comp B_searchbut::b:p:35:p, comp label16::b:p:25:p}, space :p:12:p, comp scrollPane4:::p:254:p, space :::p, comp panel3:::::x, space :::p}}"
+				} ) {
+					name: "mtbookpan"
+					"visible": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label16"
+						"text": "书名："
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "B_searchtxt"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "B_searchbut"
+						"text": "查询"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "B_searchbut", true ) )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane4"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table2"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "编号" )
+								add( "书名" )
+								add( "出版社" )
+								add( "作者" )
+								add( "库存" )
+								add( "类别" )
+								add( "描述" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "table2MousePressed", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :p:85:p, par l {seq {space :p:6:p, par l {par t {comp label18:::p:50:p, comp label17::t:p:50:p, comp label19:::p:50:p}, comp label24:::p::p}, space :p:14:p, par t:::p {comp b_statustxt::::157:x, comp b_numtxt::l::157:x, comp b_putxt::t::157:x, comp b_idtxt::l::157:x}, space :p:32:p, par l {seq t {par l:::p {comp label20::::51:x, comp label21::l::51:x, comp label22::l::51:x}, space :::p, par l:::p {comp b_nametxt::l::157:x, comp b_autxt::l::157:x, comp b_typetxt::l::157:x}, par l {seq {space :p:76:p, comp b_updatebt:::p::p}, seq t {space :::p, comp b_Rbookbt:::p::p}}}, comp b_deletebt::t:p::p}}, seq {comp label23:::p:50:p, space u:::p, comp scrollPane5:::p:358:p}}, space ::68:x}}"
+						"$verticalGroup": "par l {seq l {space :p:21:p, par b {comp label20::b:p::p, comp label17::b:p::p, comp b_idtxt::b:p::p, comp b_nametxt::b:p::p}, par l:::p {seq {space :p:27:p, par b {comp label18::b:p::p, comp b_putxt::b:p::p, comp label21::b:p::p, comp b_autxt::b:p::p}, space :p:25:p, par b {comp label19::b:p::p, comp b_numtxt::b:p::p, comp label22::b:p::p, comp b_typetxt::b:p::p}, space :::p}, seq l {space :p:3:p, comp b_updatebt:::p::p, space :::x, comp b_Rbookbt:::p::p, space :p:27:p}}, par t {comp b_deletebt:::p::p, par b {comp b_statustxt::b:p::p, comp label24::b:p::p}}, space ::18:x, par l {comp scrollPane5:::p:110:p, comp label23:::p:29:p}}}"
+					} ) {
+						name: "panel3"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label17"
+							"text": "编号:"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label18"
+							"text": "出版社："
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label19"
+							"text": "库存："
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "b_idtxt"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "b_putxt"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "b_numtxt"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label20"
+							"text": "书名："
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label21"
+							"text": "作者："
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label22"
+							"text": "类别："
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "b_nametxt"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "b_autxt"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "b_typetxt"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label23"
+							"text": "描述："
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane5"
+							add( new FormComponent( "javax.swing.JTextArea" ) {
+								name: "b_remarktxt"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "b_updatebt"
+							"text": "修改"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "b_updatebt", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "b_deletebt"
+							"text": "删除"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "b_deletebt", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "b_Rbookbt"
+							"text": "重置"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "b_Rbookbt", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label24"
+							"text": "状态："
+							"horizontalTextPosition": 0
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "b_statustxt"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 15
+					"y": 5
+					"width": 1040
+					"height": 675
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				"margin": new java.awt.Insets( 2, 2, 2, 2 )
+				"maximumSize": new java.awt.Dimension( 70, 32768 )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "图书类别管理"
+					"font": new java.awt.Font( "宋体", 1, 16 )
+					"foreground": sfield java.awt.Color blue
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "addTypemenu"
+						"text": "图书类别添加"
+						"font": new java.awt.Font( "宋体", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addTypemenu", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "mtTypemenu"
+						"text": "图书类别维护"
+						"font": new java.awt.Font( "宋体", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mtType", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "书籍管理"
+					"font": new java.awt.Font( "宋体", 1, 16 )
+					"foreground": sfield java.awt.Color blue
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "addbookmenu"
+						"text": "书籍添加"
+						"font": new java.awt.Font( "宋体", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addbookmenu", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "mtbookmenu"
+						"text": "书籍维护"
+						"font": new java.awt.Font( "宋体", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mtbookmenu", true ) )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JMenuItem" ) {
+					name: "exitmenu"
+					"text": "退出系统"
+					"horizontalAlignment": 0
+					"horizontalTextPosition": 0
+					"maximumSize": new java.awt.Dimension( 79, 32767 )
+					"font": new java.awt.Font( "宋体", 1, 16 )
+					"foreground": sfield java.awt.Color blue
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitmenu", true ) )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 0 )
+			"size": new java.awt.Dimension( 1045, 750 )
+		} )
+	}
+}
